@@ -13,7 +13,7 @@ class PurchaseAmountTest {
         @Test
         fun `should create PurchaseAmount when input is multiple of 1000`() {
             val amount = PurchaseAmount.from(3000)
-            assertThat(amount.value()).isEqualTo(3000)
+            assertThat(amount.value).isEqualTo(3000)
         }
     }
 
