@@ -27,6 +27,7 @@
 # Input
 
 - [ ] Ask for the lotto purchase amount.
+  - [x] Able to receive user input for purchase amount
   - [ ] The purchase amount must be in units of 1,000 KRW. If not divisible by 1,000, an exception should be thrown.
 
 ```
