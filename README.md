@@ -50,7 +50,7 @@
 
 # Output
 
-- [ ] Display the purchase prompt.
+- [x] Display the purchase prompt.
 ```
 Please enter the purchase amount.
 ```
