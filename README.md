@@ -1,2 +1,1 @@
-# kotlin-lotto-precourse
-# kotlin-lotto
+# Feature CheckList
