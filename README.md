@@ -24,11 +24,16 @@
   - [ ] Must handle specific exceptions like `IllegalArgumentException`, `IllegalStateException`, etc., not just `Exception`.
   - [ ] After printing the error message, allow re-input from that step.
 
+# Exception
+
+- [x] If not divisible by 1,000, an exception should be thrown.
+
+
 # Input
 
 - [ ] Ask for the lotto purchase amount.
   - [x] Able to receive user input for purchase amount
-  - [ ] The purchase amount must be in units of 1,000 KRW. If not divisible by 1,000, an exception should be thrown.
+  - [x] The purchase amount must be in units of 1,000 KRW. 
 
 ```
 14000
