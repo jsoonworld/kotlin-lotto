@@ -9,7 +9,7 @@ class ConsoleOutputView : OutputView{
         println(PURCHASED_TICKET_COUNT_MESSAGE.format(count))
     }
 
-    override fun printWinningNumbersInputMessage() {
+    override fun printWinningLottoNumbersInputMessage() {
         println(WINNING_NUMBERS_INPUT_MESSAGE)
     }
 
