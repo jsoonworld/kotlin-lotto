@@ -42,7 +42,7 @@ Only specific exceptions like `IllegalArgumentException`, `IllegalStateException
 
 # Input
 
-- [ ] Ask for the lotto purchase amount.
+- [x] Ask for the lotto purchase amount.
   - [x] Able to receive user input for purchase amount
   - [x] The purchase amount must be in units of 1,000 KRW. 
 
@@ -51,6 +51,7 @@ Only specific exceptions like `IllegalArgumentException`, `IllegalStateException
 ```
 
 - Ask for the winning numbers.
+  - [x] read winning numbers 
   - [ ] Numbers should be separated by commas (`,`).
   - [ ] If not properly comma-separated, an exception should be thrown.
   - [ ] If any non-numeric characters are included, an exception should be thrown.
