@@ -5,4 +5,5 @@ interface OutputView {
     fun printPurchasedTicketCountMessage(count: Int)
     fun printWinningLottoNumbersInputMessage()
     fun printWinningBonusNumberInputMessage()
+    fun printWinningStatisticsMessage()
 }
