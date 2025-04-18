@@ -12,8 +12,8 @@
     - [ ] 5th: Match 3 numbers / 5,000 KRW
 - [ ] When the purchase amount is entered, the corresponding number of lotto tickets must be issued.
   - [ ] Lotto tickets must be issued based on the purchase amount.
-- [ ] The price of one lotto ticket is 1,000 KRW.
-  - [ ] Lotto tickets can be purchased in units of 1,000 KRW.
+- [x] The price of one lotto ticket is 1,000 KRW.
+  - [x] Lotto tickets can be purchased in units of 1,000 KRW.
 - [ ] The winning numbers and bonus number must be input.
   - [ ] Winning numbers and bonus number must not duplicate.
 - [ ] Compare the purchased lotto numbers with the winning numbers, display the results and the yield, then end the game.
@@ -62,7 +62,7 @@ Please enter the purchase amount.
 ```
 
 - [ ] Display the number of lotto tickets purchased and the numbers. Numbers should be displayed in ascending order.
-  - [ ] Show the message about the number of tickets purchased.
+  - [x] Show the message about the number of tickets purchased.
   - [ ] Display each ticket's numbers in ascending order.
 
 ```
