@@ -73,9 +73,9 @@ Only specific exceptions like `IllegalArgumentException`, `IllegalStateException
 Please enter the purchase amount.
 ```
 
-- [ ] Display the number of lotto tickets purchased and the numbers. Numbers should be displayed in ascending order.
+- [x] Display the number of lotto tickets purchased and the numbers. Numbers should be displayed in ascending order.
   - [x] Show the message about the number of tickets purchased.
-  - [ ] Display each ticket's numbers in ascending order.
+  - [x] Display each ticket's numbers in ascending order.
 
 ```
 You have purchased 8 tickets.
