@@ -100,7 +100,7 @@ Please enter the winning numbers.
 Please enter the bonus number.
 ```
 
-- [ ] Display the winning statistics message.
+- [x] Display the winning statistics message.
 ```
 Winning Statistics
 ---
