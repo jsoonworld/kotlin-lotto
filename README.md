@@ -1,7 +1,8 @@
 # Feature Checklist
 
-- [ ] Lotto numbers must be in the range of 1 to 45.
-- [ ] One lotto ticket consists of 6 unique numbers.
+- [x] Lotto numbers must be in the range of 1 to 45.
+- [x] One lotto ticket consists of 6 unique numbers.
+- [x] Generate a bonus number that does not overlap with the main lotto numbers
 - [ ] Winning numbers consist of 6 unique numbers and 1 bonus number.
 - [ ] Prizes are awarded from 1st to 5th place, based on the number of matching numbers:
   - [ ] Prize amounts by rank:
@@ -20,13 +21,23 @@
   - [ ] Able to compare lotto numbers and winning numbers.
   - [ ] Able to display winning results.
   - [ ] Able to calculate the yield.
-- [ ] If the user inputs an invalid value, an `IllegalArgumentException` must be thrown and an error message starting with `[ERROR]` should be printed. Then, prompt the user to re-enter from that point.
-  - [ ] Must handle specific exceptions like `IllegalArgumentException`, `IllegalStateException`, etc., not just `Exception`.
-  - [ ] After printing the error message, allow re-input from that step.
+
 
 # Exception
 
-- [x] If not divisible by 1,000, an exception should be thrown.
+If the user inputs an invalid value, an `IllegalArgumentException` must be thrown and an error message starting with `[ERROR]` should be printed.  
+After printing the error message, the user should be prompted to re-enter from that point.  
+Only specific exceptions like `IllegalArgumentException`, `IllegalStateException`, etc. must be handled — **not generic `Exception`**.
+
+- [x] If the purchase amount is not divisible by 1,000, an exception should be thrown.  
+  (e.g. `[ERROR] The purchase amount must be in units of 1,000 KRW.`)
+- [x] If the lotto number count is not exactly 6, an exception should be thrown.  
+  (e.g. `[ERROR] Lotto must contain exactly 6 unique numbers.`)
+- [x] If the lotto numbers contain duplicates, an exception should be thrown.  
+  (e.g. `[ERROR] Lotto numbers must not contain duplicates.`)
+- [x] If the bonus number is included in the main lotto numbers, an exception should be thrown.  
+  (e.g. `[ERROR] Bonus number must not duplicate with lotto numbers.`)
+
 
 
 # Input
