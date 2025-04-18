@@ -24,6 +24,6 @@ class Lotto private constructor(private val numbers: List<Int>) {
         const val ERROR_INVALID_SIZE = "[ERROR] Lotto must contain exactly 6 unique numbers."
         const val ERROR_DUPLICATE_NUMBERS = "[ERROR] Lotto numbers must not contain duplicates."
 
-        internal fun of(numbers: List<Int>): Lotto = Lotto(numbers)
+        fun of(numbers: List<Int>): Lotto = Lotto(numbers)
     }
 }
