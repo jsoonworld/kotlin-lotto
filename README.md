@@ -88,7 +88,7 @@ You have purchased 8 tickets.
 [1, 3, 5, 14, 22, 45]
 ```
 
-- [ ] Display the winning number input prompt.
+- [x] Display the winning number input prompt.
 ```
 Please enter the winning numbers.
 ```
