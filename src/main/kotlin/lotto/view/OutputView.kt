@@ -1,5 +1,6 @@
 package lotto.view
 
 interface OutputView {
-    fun printPurchasePrompt()
+    fun printPurchaseMessage()
+    fun printPurchasedTicketCountMessage(count: Int)
 }
