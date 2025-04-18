@@ -9,8 +9,13 @@ class ConsoleOutputView : OutputView{
         println(PURCHASED_TICKET_COUNT_MESSAGE.format(count))
     }
 
+    override fun printWinningNumbersInputMessage() {
+        println(WINNING_NUMBERS_INPUT_MESSAGE)
+    }
+
     companion object {
         const val PURCHASE_AMOUNT_MESSAGE = "Please enter the purchase amount."
         const val PURCHASED_TICKET_COUNT_MESSAGE = "You have purchased %d tickets."
+        const val WINNING_NUMBERS_INPUT_MESSAGE = "Please enter the winning numbers."
     }
 }
