@@ -61,6 +61,7 @@ Only specific exceptions like `IllegalArgumentException`, `IllegalStateException
 ```
 
 - Ask for the bonus number.
+  - [x] read bonus number
 
 ```
 7
@@ -94,7 +95,7 @@ You have purchased 8 tickets.
 Please enter the winning numbers.
 ```
 
-- [ ] Display the bonus number input prompt.
+- [x] Display the bonus number input prompt.
 ```
 Please enter the bonus number.
 ```
