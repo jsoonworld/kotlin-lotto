@@ -1,23 +1,42 @@
 package lotto
 
+import lotto.domain.Lotto
+import org.assertj.core.api.Assertions.assertThat
+import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 
 class LottoTest {
-    @Test
-    fun `로또 번호의 개수가 6개가 넘어가면 예외가 발생한다`() {
-        assertThrows<IllegalArgumentException> {
-            Lotto(listOf(1, 2, 3, 4, 5, 6, 7))
+
+    @Nested
+    inner class SuccessCase {
+
+        @Test
+        fun `should create Lotto with 6 unique numbers`() {
+            val lotto = Lotto(listOf(8, 3, 1, 15, 9, 2))
+            assertThat(lotto.numbers()).containsExactly(1, 2, 3, 8, 9, 15)
         }
     }
 
-    // TODO: 테스트가 통과하도록 프로덕션 코드 구현
-    @Test
-    fun `로또 번호에 중복된 숫자가 있으면 예외가 발생한다`() {
-        assertThrows<IllegalArgumentException> {
-            Lotto(listOf(1, 2, 3, 4, 5, 5))
+    @Nested
+    inner class FailCase {
+
+        @Test
+        fun `should throw when more than 6 numbers are given`() {
+            val exception = assertThrows<IllegalArgumentException> {
+                Lotto(listOf(1, 2, 3, 4, 5, 6, 7))
+            }
+
+            assertThat(exception.message).isEqualTo(Lotto.ERROR_INVALID_SIZE)
+        }
+
+        @Test
+        fun `should throw when duplicate numbers are given`() {
+            val exception = assertThrows<IllegalArgumentException> {
+                Lotto(listOf(1, 2, 3, 4, 5, 5))
+            }
+
+            assertThat(exception.message).isEqualTo(Lotto.ERROR_DUPLICATE_NUMBERS)
         }
     }
-
-    // TODO: 추가 기능 구현에 따른 테스트 코드 작성
 }
