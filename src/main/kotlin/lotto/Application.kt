@@ -1,5 +1,9 @@
 package lotto
 
+import lotto.application.LottoGameExecutor
+import lotto.view.ConsoleInputView
+import lotto.view.ConsoleOutputView
+
 fun main() {
-    // TODO: 프로그램 구현
+    LottoGameExecutor(ConsoleInputView(), ConsoleOutputView()).run()
 }
