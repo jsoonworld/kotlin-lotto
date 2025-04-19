@@ -6,4 +6,5 @@ interface OutputView {
     fun printWinningLottoNumbersInputMessage()
     fun printWinningBonusNumberInputMessage()
     fun printWinningStatisticsMessage()
+    fun printWinningResult(rankDescription: String, count: Int)
 }
