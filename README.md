@@ -3,24 +3,24 @@
 - [x] Lotto numbers must be in the range of 1 to 45.
 - [x] One lotto ticket consists of 6 unique numbers.
 - [x] Generate a bonus number that does not overlap with the main lotto numbers
-- [ ] Winning numbers consist of 6 unique numbers and 1 bonus number.
-- [ ] Prizes are awarded from 1st to 5th place, based on the number of matching numbers:
-  - [ ] Prize amounts by rank:
-    - [ ] 1st: Match 6 numbers / 2,000,000,000 KRW
-    - [ ] 2nd: Match 5 numbers + bonus number / 30,000,000 KRW
-    - [ ] 3rd: Match 5 numbers / 1,500,000 KRW
-    - [ ] 4th: Match 4 numbers / 50,000 KRW
-    - [ ] 5th: Match 3 numbers / 5,000 KRW
-- [ ] When the purchase amount is entered, the corresponding number of lotto tickets must be issued.
+- [x] Winning numbers consist of 6 unique numbers and 1 bonus number.
+- [x] Prizes are awarded from 1st to 5th place, based on the number of matching numbers:
+  - [x] Prize amounts by rank:
+    - [x] 1st: Match 6 numbers / 2,000,000,000 KRW
+    - [x] 2nd: Match 5 numbers + bonus number / 30,000,000 KRW
+    - [x] 3rd: Match 5 numbers / 1,500,000 KRW
+    - [x] 4th: Match 4 numbers / 50,000 KRW
+    - [x] 5th: Match 3 numbers / 5,000 KRW
+- [x] When the purchase amount is entered, the corresponding number of lotto tickets must be issued.
   - [ ] Lotto tickets must be issued based on the purchase amount.
 - [x] The price of one lotto ticket is 1,000 KRW.
   - [x] Lotto tickets can be purchased in units of 1,000 KRW.
-- [ ] The winning numbers and bonus number must be input.
-  - [ ] Winning numbers and bonus number must not duplicate.
-- [ ] Compare the purchased lotto numbers with the winning numbers, display the results and the yield, then end the game.
-  - [ ] Able to compare lotto numbers and winning numbers.
-  - [ ] Able to display winning results.
-  - [ ] Able to calculate the yield.
+- [x] The winning numbers and bonus number must be input.
+  - [x] Winning numbers and bonus number must not duplicate.
+- [x] Compare the purchased lotto numbers with the winning numbers, display the results and the yield, then end the game.
+  - [x] Able to compare lotto numbers and winning numbers.
+  - [x] Able to display winning results.
+  - [x] Able to calculate the yield.
 
 
 # Exception
@@ -52,9 +52,9 @@ Only specific exceptions like `IllegalArgumentException`, `IllegalStateException
 
 - Ask for the winning numbers.
   - [x] read winning numbers 
-  - [ ] Numbers should be separated by commas (`,`).
-  - [ ] If not properly comma-separated, an exception should be thrown.
-  - [ ] If any non-numeric characters are included, an exception should be thrown.
+  - [x] Numbers should be separated by commas (`,`).
+  - [x] If not properly comma-separated, an exception should be thrown.
+  - [x] If any non-numeric characters are included, an exception should be thrown.
 
 ```
 1,2,3,4,5,6
@@ -106,7 +106,7 @@ Winning Statistics
 ---
 ```
 
-- [ ] Display the result of winning tickets.
+- [x] Display the result of winning tickets.
 ```
 3 matches (5,000 KRW) - 1 ticket
 4 matches (50,000 KRW) - 0 tickets
@@ -115,13 +115,13 @@ Winning Statistics
 6 matches (2,000,000,000 KRW) - 0 tickets
 ```
 
-- [ ] Display total yield message.
-  - [ ] The yield should be rounded to the nearest tenth. (e.g., 100.0%, 51.5%, 1,000,000.0%)
+- [x] Display total yield message.
+  - [x] The yield should be rounded to the nearest tenth. (e.g., 100.0%, 51.5%, 1,000,000.0%)
 ```
 The total yield is 62.5%.
 ```
 
-- [ ] On exception, an error message must be printed starting with `[ERROR]`.
+- [x] On exception, an error message must be printed starting with `[ERROR]`.
 ```
 [ERROR] Lotto numbers must be between 1 and 45.
 ```
