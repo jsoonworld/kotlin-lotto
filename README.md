@@ -12,7 +12,7 @@
     - [x] 4th: Match 4 numbers / 50,000 KRW
     - [x] 5th: Match 3 numbers / 5,000 KRW
 - [x] When the purchase amount is entered, the corresponding number of lotto tickets must be issued.
-  - [ ] Lotto tickets must be issued based on the purchase amount.
+  - [x] Lotto tickets must be issued based on the purchase amount.
 - [x] The price of one lotto ticket is 1,000 KRW.
   - [x] Lotto tickets can be purchased in units of 1,000 KRW.
 - [x] The winning numbers and bonus number must be input.
