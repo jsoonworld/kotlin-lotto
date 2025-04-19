@@ -19,15 +19,18 @@ class ConsoleOutputView : OutputView{
 
     override fun printWinningStatisticsMessage() {
         println(WINNING_STATISTICS_MESSAGE)
-        println(STATISTICS_SEPARATOR)
+    }
+
+    override fun printWinningResult(rankDescription: String, count: Int) {
+        println("$rankDescription - ${count}개")
     }
 
     companion object {
-        const val PURCHASE_AMOUNT_MESSAGE = "Please enter the purchase amount."
-        const val PURCHASED_TICKET_COUNT_MESSAGE = "You have purchased %d tickets."
-        const val WINNING_LOTTO_NUMBERS_INPUT_MESSAGE = "Please enter the winning numbers."
-        const val WINNING_BONUS_NUMBER_INPUT_MESSAGE = "Please enter the bonus number."
-        const val WINNING_STATISTICS_MESSAGE = "Winning Statistics"
-        const val STATISTICS_SEPARATOR = "---"
+        const val PURCHASE_AMOUNT_MESSAGE = "구입금액을 입력해 주세요."
+        const val PURCHASED_TICKET_COUNT_MESSAGE = "%d개를 구매했습니다."
+        const val WINNING_LOTTO_NUMBERS_INPUT_MESSAGE = "당첨 번호를 입력해 주세요."
+        const val WINNING_BONUS_NUMBER_INPUT_MESSAGE = "보너스 번호를 입력해 주세요."
+        const val WINNING_STATISTICS_MESSAGE = "당첨 통계\n---"
+        const val TOTAL_YIELD_MESSAGE = "총 수익률은 %.1f%%입니다."
     }
 }
