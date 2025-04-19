@@ -15,10 +15,7 @@ class BonusNumber private constructor(private val bonusNumber: Int) {
     override fun toString(): String = bonusNumber.toString()
 
     companion object {
-        const val ERROR_DUPLICATE_WITH_LOTTO = "[ERROR] Bonus number must not duplicate with lotto numbers."
-
-        fun of(bonus: Int, lotto: Lotto): BonusNumber {
-            require(bonus !in lotto.numbers()) { ERROR_DUPLICATE_WITH_LOTTO }
+        fun of(bonus: Int): BonusNumber {
             return BonusNumber(bonus)
         }
     }
